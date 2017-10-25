@@ -1,0 +1,483 @@
+extends templates/layout
+block vars
+  - var title = 'Index page'
+
+block content
+  section.section--1
+   .header
+    .header__logo.logo
+     a(href="http://xn--j1aon.xn--p1ai/").logo__link
+      img(src='/build/images/logo.png')
+    .header__info.info
+      ul.info_items
+          li.info__item.info__item_1
+           img(src='/build/images/letter.png')
+          li.info__item.info__item_2
+           a(href="mailto:info@цкс.рф") info@цкс.рф
+          li.info__item.info__item_3
+           img(src='/build/images/phone.png')
+          li.info__item.info__item_4
+           a(href="tell:+7 (863) 299-07-14") +7 (863) 299-07-14
+          li.info__item.info__item_5
+           img(src='/build/images/point.png')
+          li.info__item.info__item_6
+           a(href="https://www.google.ru/maps/place/%D0%BF%D0%B5%D1%80.+%D0%A1%D0%BE%D0%BB%D1%8F%D0%BD%D0%BE%D0%B9+%D0%A1%D0%BF%D1%83%D1%81%D0%BA,+8%D0%BA10,+%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83,+%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+344002/@47.2146635,39.70599,17z/data=!3m1!4b1!4m5!3m4!1s0x40e3b914bb99b36b:0x52c8f3e94aae282b!8m2!3d47.2146635!4d39.7081787" target="_blank").map_link г. Ростов-на-Дону, пер. Соляной Спуск, 8-10
+
+  section.section--2
+    .row
+     .col-xs-12.line_1
+      ul.line_1__items
+       li.list
+        img(src='/build/images/helmet.png')
+       li.list
+        ul.list__items
+         li Автономная некоммерческая организация
+         li дополнительного профессионального образования
+         li «Центр качества строительства»
+
+
+  section.section--3
+   .row
+    .col-xs-6
+      .section--3-col_1.col_1
+        .col_1__element.element_1.list
+          .list__items
+            .item
+              a(href="#gallery_1").left.link_item
+               img(src='/build/images/el_1.png')
+            .item
+              a(href="#gallery_1").left.link_item Основные сведения
+                span.counter_doc (27)
+
+     .col-xs-6
+      .section--3-col_2.col_2
+        .col_2__element.element_1.list
+          .list__items
+            .item
+              a(href="#gallery_1").right.link_item
+               img(src='/build/images/el_4.png')
+            .item
+              a(href="#gallery_1").right.link_item Материально-техническое обеспечение и оснащенность образовательного процесса
+                span.counter_doc (6)
+
+  .section--gallery.gallery.gallery--1#gallery_1
+    ul.bxslider
+      div.bxslider__slide.slide
+         div.slide__wrapper.doc
+           div.doc__item
+             a(href="#").link_doc
+                 span.doc__item__title
+                  div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+                 span.doc__item__title
+                  div.title__wrap Название документа
+           div.doc__item
+              a(href="#").link_doc
+                 span.doc__item__title
+                   div.title__wrap Название документа
+           div.doc__item
+              a(href="#").link_doc
+                  span.doc__item__title
+                   div.title__wrap Название документа
+           div.doc__item
+              a(href="#").link_doc
+                  span.doc__item__title
+                   div.title__wrap Название документа
+      div.bxslider__slide.slide
+         div.slide__wrapper.doc
+           div.doc__item
+             a(href="#").link_doc
+                 span.doc__item__title
+                  div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+                 span.doc__item__title
+                  div.title__wrap Название документа
+
+                  script.
+                    $('.bxslider').bxSlider({
+                      pager: false
+                    });
+
+  section.section--3
+   .row
+    .col-xs-6
+      .section--3-col_1.col_1
+        .col_1__element.element_1.list
+          .list__items
+              .item
+                a(href="#gallery_2").left.link_item
+                 img(src='/build/images/el_2.png')
+              .item
+                a(href="#gallery_2").link_item.left Структура и органы управления образовательной организацией
+                  span.counter_doc (16)
+
+     .col-xs-6
+      .section--3-col_2.col_2
+        .col_2__element.element_1.list
+          .list__items
+            .item
+              a(href="#gallery_2").right.link_item
+               img(src='/build/images/el_5.png')
+            .item
+              a(href="#gallery_2").link_item.right Стипендии и иные виды  материальной поддержки
+                span.counter_doc (6)
+
+  .section--gallery.gallery.gallery--2#gallery_2
+    ul.bxslider
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа Название документа Название документа Название документа Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+
+              script.
+                $('.bxslider').bxSlider({
+                  pager: false
+                });
+
+  section.section--3
+   .row
+    .col-xs-6
+      .section--3-col_1.col_1
+        .col_1__element.element_1.list
+          .list__items
+              .item
+                a(href="#gallery_3").left.link_item
+                 img(src='/build/images/el_3.png')
+              .item
+                a(href="#gallery_3").link_item.left Документы
+                  span.counter_doc (54)
+
+     .col-xs-6
+       .section--3-col_2.col_2
+        .col_2__element.element_1.list
+          .list__items
+            .item
+              a(href="#gallery_3").link_item.right
+               img(src='/build/images/el_6.png')
+            .item
+              a(href="#gallery_3").link_item.right Платные образовательные услуги
+                span.counter_doc (54)
+
+  .section--gallery.gallery.gallery--3#gallery_3
+   ul.bxslider
+     div.bxslider__slide.slide
+       div.slide__wrapper.doc
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+     div.bxslider__slide.slide
+       div.slide__wrapper.doc
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+         div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+             script.
+               $('.bxslider').bxSlider({
+                 pager: false
+               });
+
+  section.section--3
+    .row
+      .col-xs-6
+        .section--3-col_1.col_1
+          .col_1__element.element_1.list
+            .list__items
+                .item
+                  a(href="#gallery_4").link_item.left
+                   img(src='/build/images/el_7.png')
+                .item
+                  a(href="#gallery_4").link_item.left Образование
+                    span.counter_doc (21)
+
+      .col-xs-6
+        .section--3-col_2.col_2
+          .col_2__element.element_1.list
+            .list__items
+              .item
+                 a(href="#gallery_4").link_item.right
+                  img(src='/build/images/el_10.png')
+              .item
+                a(href="#gallery_4").link_item.right Финансово-хозяйственная деятельность
+                  span.counter_doc (54)
+
+  .section--gallery.gallery.gallery--4#gallery_4
+    ul.bxslider
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+      div.bxslider__slide.slide
+         div.slide__wrapper.doc
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+                  script.
+                    $('.bxslider').bxSlider({
+                      pager: false
+                    });
+
+
+  section.section--3
+    .row
+      .col-xs-6
+        .section--3-col_1.col_1
+          .col_1__element.element_1.list
+            .list__items
+              .item
+               a(href="#gallery_5").link_item.left
+                 img(src='/build/images/el_8.png')
+              .item
+                a(href="#gallery_5").link_item.left  Образовательные стандарты
+                  span.counter_doc (13)
+
+      .col-xs-6
+        .section--3-col_2.col_2
+          .col_2__element.element_1.list
+            .list__items
+                .item
+                  a(href="#gallery_5").link_item.right
+                    img(src='/build/images/el_11.png')
+                .item
+                  a(href="#gallery_5").link_item.right Вакантные места для приема (перевода)
+
+
+  .section--gallery.gallery.gallery--5#gallery_5
+    ul.bxslider
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+      div.bxslider__slide.slide
+         div.slide__wrapper.doc
+           div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+                script.
+                  $('.bxslider').bxSlider({
+                    pager: false
+                  });
+
+
+  section.section--3.last_section--3
+   .row
+    .col-xs-6
+      .section--3-col_1.col_1
+        .col_1__element.element_1.list
+          .list__items
+            .item
+             a(href="#gallery_6").link_item.left
+              img(src='/build/images/el_9.png')
+            .item
+              a(href="#gallery_6").link_item.left  Руководство. Педагогический (научно-педагогический) состав
+                span.counter_doc (13)
+
+    .col-xs-6
+
+
+
+  .section--gallery.gallery.gallery--6#gallery_6
+    ul.bxslider
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+          div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+          div.doc__item
+            a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+          div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+          div.doc__item
+           a(href="#").link_doc
+             span.doc__item__title
+              div.title__wrap Название документа
+      div.bxslider__slide.slide
+        div.slide__wrapper.doc
+           div.doc__item
+            a(href="#").link_doc
+              span.doc__item__title
+               div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+           div.doc__item
+             a(href="#").link_doc
+               span.doc__item__title
+                div.title__wrap Название документа
+                  script.
+                    $('.bxslider').bxSlider({
+                      pager: false
+                    });
+
+  section.section--4
+   .section--4__top_line.top_line
+    .button_arrow
+    .title
+      span Мы на карте
+
+
+  section.section--map
+   iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.098064321015!2d39.70599001603508!3d47.21466347916064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b914bb99b36b%3A0x52c8f3e94aae282b!2z0L_QtdGALiDQodC-0LvRj9C90L7QuSDQodC_0YPRgdC6LCA40LoxMCwg0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NDAwMg!5e0!3m2!1sru!2sru!4v1491568928885" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
+
+  section.footer
+   .footer__col.col_1
+    a(href="http://xn--j1aon.xn--p1ai/").col_1__link_logo
+     img(src='/build/images/logo_footer.png')
+   .footer__col.col_2
+    span.col_2__description Автономная некоммерческая организация<br> дополнительного профессионального образования <br>«Центр качества строительства»
+   .footer__col.col_3
+    span.col_3__description Учредитель:<br>Шумеев Павел Андреевич
+   .footer__col.col_4
+    span.col_4__copyright
+     &#169; Все права защищены
+    span.col_4__description 2014 г. - 2017 г.
